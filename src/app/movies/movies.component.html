@@ -1,0 +1,11 @@
+<app-loader *ngIf="loading"></app-loader>
+<div class="row">
+  <div class="card col-6 col-sm-2" *ngFor="let mov of movies">
+    <img class="card-img-top" [src]="mov['imgSrc']" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</div>
+<simple-notifications [options]="options"></simple-notifications>
